@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dsw2026Ej15.Domain
+namespace Dsw2026Ej15.Domain;
+
+public class ValidationException : Exception
 {
-    internal class ValidationException
+    public ValidationException(string message) : base(message)
     {
     }
 }
